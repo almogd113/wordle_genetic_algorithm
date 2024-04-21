@@ -1,5 +1,5 @@
 import random
-import genetic_classes.genetic_algorithm
+import genetic_algorithm
 
 
 class Chromosome:
@@ -10,7 +10,7 @@ class Chromosome:
     def __init__(self):
         self.genes = [(str)]
         self.fitness = 0
-        self.target_word_length = len(genetic_classes.genetic_algorithm.TARGET_CHROMOSOME)
+        self.target_word_length = len(genetic_algorithm.TARGET_CHROMOSOME)
 
     def genes_init(self) -> None:
         genes = []
@@ -20,7 +20,7 @@ class Chromosome:
 
     def calculate_fitness(self):
         fitness_count = 0
-        target_chromosome = genetic_classes.genetic_algorithm.TARGET_CHROMOSOME
+        target_chromosome = genetic_algorithm.TARGET_CHROMOSOME
         for gene_target, gene_chromosome in zip(self.genes, target_chromosome):
             if gene_target == gene_chromosome:
                 fitness_count += 1

@@ -1,4 +1,4 @@
-from genetic_classes.chromosome import Chromosome
+from chromosome import Chromosome
 
 
 class Population:

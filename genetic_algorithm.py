@@ -1,4 +1,4 @@
-from genetic_classes.population import Population
+from population import Population
 
 TARGET_CHROMOSOME = "almog"
 POPULATION_SIZE = 8
